@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainDiv1" class="main">
+        <div class="subDiv1">
+            <div class="allData">
+                <h1 class="signUpHeading">
+                    SIGN UP
+                </h1>
+
+                <div class="inputDiv">
+                    <input id="email" type="text" placeholder="Email / Username ..." >
+
+                <input id="password" type="password" placeholder="Password ..." >
+
+                </div>
+                
+                <div onclick="signUpFunction()" class="submitDiv">
+                    Create Account
+                </div>
+
+            </div>
+        </div>
+        <div id="modelDivID" class="modelDiv">
+            SUCCESSFULLY CREATED ACCOUNT
+        </div>
+        <div id="modelDivEmpty" class="modelDiv">
+            INPUT FIELDS ARE MANDATORY!!!
+        </div>
+    </div>
+
+    <div id="mainDiv2" class="main2">
+        <div class="subDiv1">
+            <div class="allData">
+                <h1 class="signUpHeading">
+                    SIGN IN
+                </h1>
+
+                <div class="inputDiv">
+                    <input id="logInEmail" type="text" placeholder="Email / Username ..." >
+
+                <input id="logInPassword" type="password" placeholder="Password ..." >
+
+                </div>
+                
+                <div onclick="signInFunction()" class="submitDiv">
+                    LOG IN
+                </div>
+
+            </div>
+        </div>
+        <div id="logInModelDivIDTrue" class="modelDiv">
+            LOG IN SUCCESSFULL / VALID CREDENTIALS
+        </div>
+        <div id="logInModelDivIDFalse" class="modelDiv">
+            LOG IN UNSUCCESSFULL / INVALID CREDENTIALS
+        </div>
+        <div id="logInModelDivEmpty" class="modelDiv">
+            INPUT FIELDS ARE MANDATORY!!!
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

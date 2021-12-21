@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="mainHaeding">
+                GRADE CHECKER
+            </h1>
+            <div class="inputDiv">
+                <input type="number" class="inputFields" placeholder="Enter English Marks" id="english">
+                <input type="number" class="inputFields" placeholder="Enter Math Marks" id="math">
+                <input type="number" class="inputFields" placeholder="Enter Urdu Marks" id="urdu">
+                <input type="number" class="inputFields" placeholder="Enter Chemistry Marks" id="chemistry">
+                <input type="number" class="inputFields" placeholder="Enter Physics Marks" id="physics">
+                <div id="readOnlyDivs1" class="readOnlyDivs">
+                    <div class="readOnlyInputs" id="totalMarks"></div>
+                    <div class="readOnlyInputs" id="obtainedMarks"></div>
+                </div>
+                <div id="readOnlyDivs2" class="readOnlyDivs">
+                    <div class="readOnlyInputs" id="percentage"></div>
+                    <div class="readOnlyInputs" id="grade"></div>
+                </div>
+                <div class="calculateBtn" onclick="percentageCalculator()">
+                    CALCULATE
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
